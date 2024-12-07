@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #74FA04;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5BC503;
+}
+
+/* Prevent horizontal overflow */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: black;
+}
+
+#root {
+  overflow-x: hidden;
+  position: relative;
+}
